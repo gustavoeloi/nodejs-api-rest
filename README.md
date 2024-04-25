@@ -1,3 +1,22 @@
+# 👨‍💻 Criando API REST com NodeJS
+
+# Requisitos Funcionais
+
+- [X] O usuário deve poder criar uma nova transação
+- [X] O usuário deve poder obter um resumo da sua conta (rota que retorna o valor total entre as transações)
+- [X] O usuário deve poder listar todas as transações que já ocorreram
+- [X] O usuário deve poder visualizar uma transação única
+
+# Regras de Negócios
+
+- [X] A transação pode ser do tipo crédito que somará ao valor total, ou débito que subtrairá;
+- [ ] Deve ser possível identificarmos o usuário entre as requisições
+- [ ] O usuário só pode visualizar transações o qual ele criou
+
+# Regras Não Funcionais
+
+- [ ] ...
+
 🕸️ **Fastify:** é um micro framework do NodeJS popular com uma API semelhante ao `express`, sendo mais atual, mais perfomática e mais atualizad que o `express`. 
 
 - Extremamente performático.
@@ -115,3 +134,13 @@
     ```
     
     Aqui é um teste para testar se o usuário está conseguindo pegar uma transação pelo ID daquela transação.
+
+    ### 🖥️Deploy
+
+
+  Arquiteturas de deploy é a maneira como você disponibiliza sua aplicação ao usuário final, existem diversas abordagem e tecnologias para isso e aqui vão algumas:
+  - **Deploy Tradicional em Servidores Físicos ou Virtuais:** você configura um servidor físico/virtual, configura e instala todos os componentes necessários para executar seu aplicativo. Exemplos que incluem a máquina virtual: Azure, AWS e Google Cloud.
+  - **Contâiners Dockers**: Você empacota seu aplicativo e todas as suas dependências em container docker. Gerando um unidade isolada de software que pode ser executada em qualquer ambiente que tenha o Docker instalado, garantindo portabilidade e consistência. Exemplos: Kubernetes para a orquestrações de containers.
+  - **Serverless (Computação sem servidor)**: Nesse modelo, você não precisa se preocupar com infraestrutura subjacente. Você apenas carrega seu código, a plataforma em que você está trabalhando se encarrega de escalonar e gerenciar a execução conforme necessário. Exemplos: AWS Lambda, Google Cloud Functions e Azure Functions.
+  - **Plataformas de Hospedagem de Aplicativos (PaaS):** Fornecem um ambiente completo para construir, implantar e gerenciar seus aplicativos sem se preocupar com a infraestutura subjacente. Exemplos: Heroku, Google App Engine e Microsoft Azure App Service.
+  - **Arquiteturas baseada em Micro-serviços:** Neste estilo arquitetural, um aplicativo é construído em conjunto com serviços pequenos e indepentendes, cada um executando um processo específico e se comunicando  através de APIs. Isso permite uma escalabilidade e manutenção. Netflix, Uber e Spotify utilizam dessa arquitetura.
