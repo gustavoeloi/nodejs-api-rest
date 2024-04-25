@@ -1,3 +1,11 @@
+# Dependencias
 node_modules
-./database
+
+# Database 
+/database/*.db
+
+# Environments
 .env
+
+# Build
+dist
