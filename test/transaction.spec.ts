@@ -96,7 +96,7 @@ describe('Transactions routes', () => {
 
     const cookies = createFirstTransactionResponse.get('Set-Cookie')!
 
-    const createSecondTransactionReponse = await request(app.server)
+    await request(app.server)
       .post('/transactions')
       .set('Cookie', cookies)
       .send({
