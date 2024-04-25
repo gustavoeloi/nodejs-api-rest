@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts",
-    "knex": "node --import tsx ./node_modules/knex/bin/cli.js"
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,8 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20.12.7",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
     "tsx": "^4.7.2",
     "typescript": "^5.4.5"
   },
@@ -23,6 +26,7 @@
     "fastify": "^4.26.2",
     "knex": "^3.1.0",
     "sqlite3": "^5.1.7",
+    "vitest": "^1.5.1",
     "zod": "^3.23.0"
   }
 }
